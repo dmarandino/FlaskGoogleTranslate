@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1> List of all supported languages </h1>
+{% for key in all_languages %}
+    <p> {{ (key, '->', all_languages[key])}} </p>
+{% endfor %}
+
+
+{% endblock content%}

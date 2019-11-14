@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block title %}Translation page{% endblock %}
+
+
+{% block content %}
+  <h1>Translated Text in {{dest}}: {{ translate(text, src, dest) }}</h1>
+{% endblock %}
+
